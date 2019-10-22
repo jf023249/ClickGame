@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -72,8 +73,10 @@ public class ClickGame {
 		frame.setBounds(100, 100, 900, 900);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton btnAdd = new JButton("Add 1");
-		btnAdd.setBounds(17, 296, 209, 158);
+		ImageIcon icon2 = new ImageIcon("dollar.jpeg");
+		
+		JButton btnAdd = new JButton(icon2);
+		btnAdd.setBounds(17, 296, 330, 158);
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AddOne add = new AddOne();
@@ -133,7 +136,7 @@ public class ClickGame {
 		
 		
 		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setBounds(324, 37, 209, 413);
+		textArea_1.setBounds(324, 37, 209, 243);
 		frame.getContentPane().add(textArea_1);
 		textArea_1.setEditable(false);
 		
