@@ -1,20 +1,16 @@
 
 
-import java.lang.Math;
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JScrollBar;
-
-import java.awt.BorderLayout;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JTextField;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 //Add functions called by buttons
 
