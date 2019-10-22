@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JLabel;
 
 //Add functions called by buttons
 
@@ -69,7 +70,7 @@ public class ClickGame {
 	
 	public void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 568, 523);
+		frame.setBounds(100, 100, 900, 900);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JButton btnAdd = new JButton("Add 1");
@@ -136,6 +137,17 @@ public class ClickGame {
 		textArea_1.setBounds(324, 37, 209, 413);
 		frame.getContentPane().add(textArea_1);
 		textArea_1.setEditable(false);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(558, 203, 303, 479);
+		frame.getContentPane().add(scrollPane_1);
+		
+		JTextArea textArea_2 = new JTextArea();
+		scrollPane_1.setViewportView(textArea_2);
+		
+		JLabel lblNews = new JLabel("NEWS");
+		lblNews.setBounds(682, 147, 190, 43);
+		frame.getContentPane().add(lblNews);
 		
 		textArea_1.append("Prices: \n ------------ \n Ones: 50 \n Fives: 250 \n Fifteens: 3000 ");
 		
