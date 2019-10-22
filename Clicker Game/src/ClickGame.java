@@ -42,6 +42,9 @@ public class ClickGame {
 	private static JTextField textField;
 	private static JTextArea textArea;
 	private static JScrollBar sb;
+	private static JTextArea textArea_2;
+	private static JScrollBar sb_2;
+	
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -142,7 +145,7 @@ public class ClickGame {
 		scrollPane_1.setBounds(558, 203, 303, 479);
 		frame.getContentPane().add(scrollPane_1);
 		
-		JTextArea textArea_2 = new JTextArea();
+		textArea_2 = new JTextArea();
 		scrollPane_1.setViewportView(textArea_2);
 		
 		JLabel lblNews = new JLabel("NEWS");
@@ -153,10 +156,13 @@ public class ClickGame {
 		
 		
 		sb = scrollPane.getVerticalScrollBar();
+		sb_2 = scrollPane_1.getVerticalScrollBar();
 		
 		
 		Update update = new Update();
 		RandomBoost random = new RandomBoost();
+		RandomNews news = new RandomNews();
+		news.start();
 		random.start();
 		update.start();
 		
@@ -301,5 +307,99 @@ public class ClickGame {
 		catch(Exception e) {e.printStackTrace();}
 	}
 	}
+	class RandomNews extends Thread{
+		public void run() {
+			try {
+				while(1 == 1)
+				{
+				Thread.sleep(60000);
+				double random = Math.random();
+				if(random <=.1)
+				{
+					textArea_2.append("NEWS 1\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.2)
+				{
+					textArea_2.append("NEWS 2\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.3)
+				{
+					textArea_2.append("NEWS 3\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.4)
+				{
+					textArea_2.append("NEWS 4\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.5)
+				{
+					textArea_2.append("NEWS 5\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.6)
+				{
+					textArea_2.append("NEWS 6\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.7)
+				{
+					textArea_2.append("NEWS 7\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.8)
+				{
+					textArea_2.append("NEWS 8\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else if(random <=.9)
+				{
+					textArea_2.append("NEWS 9\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				else 
+				{
+					textArea_2.append("NEWS 10\n");
+					sb_2.setValue( sb_2.getMaximum() );
+
+				}
+				}
+			}
+			catch(Exception e) {e.printStackTrace();}
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
